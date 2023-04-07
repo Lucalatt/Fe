@@ -1,0 +1,129 @@
+<div id="myCarousel" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container-fluid d-flex justify-content-center align-items-center">
+        <div class="card shadow text-center p-5 m-5">
+          <div class="card-body text-success">
+            <h1 class="card-title mb-4 logo fw-bold">ATLETA?</h1>
+            <p>Registrati qui</p>
+            <form #formUtente="ngForm" (ngSubmit)="onsubmit(formUtente)">
+              <div class="form-floating form-group mb-3">
+                <input name="nome" type="text" class="form-control" id="nome" placeholder="Nome" required ngModel>
+                <label for="nome"><i class="bi bi-person"></i> Nome</label>
+              </div>
+              <div class="form-floating form-group mb-3">
+                <input name="cognome" type="text" class="form-control" id="cognome" placeholder="Cognome" required ngModel>
+                <label for="cognome"><i class="bi bi-person"></i>Cognome</label>
+              </div>
+              <div class="form-floating form-group mb-3">
+                <input name="username" type="text" class="form-control" id="username" placeholder="Username" required ngModel>
+                <label for="username"><i class="bi bi-person"></i>Username</label>
+              </div>
+              <div class="form-floating form-group mb-3">
+                <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" required ngModel>
+                <label for="email"><i class="bi bi-envelope"></i> Email</label>
+              </div>
+              <div class="form-floating form-group mb-3">
+                <input name="password" type="password" class="form-control" id="password" placeholder="password" required ngModel>
+                <label for="password"><i class="bi bi-key"></i> Password</label>
+              </div>
+              <button type="submit" class="btn btn-success px-5" [disabled]="formUtente.invalid">Registrati</button>
+            </form>
+          </div>
+          <hr class="border border-secondary">
+          <p class="text-secondary">Sei già registrato? <a class="text-success text-decoration-none" [routerLink]="['/login']">Effettua il Login</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container-fluid d-flex justify-content-center align-items-center">
+        <div class="card w-50 shadow text-center p-5 m-5">
+          <div class="card-body text-success">
+            <h1 class="card-title mb-4 logo fw-bold">CLUB?</h1>
+            <p>Registrati qui</p>
+            <form #formClub="ngForm" (ngSubmit)="onsubmitClub(formClub)">
+              <div class="row">
+              <div class="col-sm-6">
+                <div class="form-floating form-group mb-3">
+                <input name="nome" type="text" class="form-control" id="nome" placeholder="Nome" required ngModel>
+                <label for="nome"><i class="bi bi-person"></i> Nome</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+              <div class="form-floating form-group mb-3">
+                <input name="username" type="text" class="form-control" id="username" placeholder="Username" required ngModel>
+                <label for="username"><i class="bi bi-person"></i>Username</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating form-group mb-3">
+                <input name="sport" type="text" class="form-control" id="sport" placeholder="sport" required ngModel>
+                <label for="sport"><i class="bi bi-person"></i>Sport</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating form-group mb-3">
+                <input name="regione" type="text" class="form-control" id="regione" placeholder="regione" required ngModel>
+                <label for="regione"><i class="bi bi-person"></i>Regione</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating form-group mb-3">
+                <input name="citta" type="text" class="form-control" id="citta" placeholder="citta" required ngModel>
+                <label for="citta"><i class="bi bi-person"></i>Città</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating form-group mb-3">
+                <input name="indirizzo" type="text" class="form-control" id="indirizzo" placeholder="indirizzo" required ngModel>
+                <label for="indirizzo"><i class="bi bi-person"></i>Indirizzo</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating form-group mb-3">
+                <input name="competizione" type="text" class="form-control" id="competizione" placeholder="competizione" required ngModel>
+                <label for="competizione"><i class="bi bi-person"></i>Competizione</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating form-group mb-3">
+                <input name="orari" type="text" class="form-control" id="orari" placeholder="orari" required ngModel>
+                <label for="orari"><i class="bi bi-person"></i>Orari</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating form-group mb-3">
+                <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" required ngModel>
+                <label for="email"><i class="bi bi-envelope"></i> Email</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating form-group mb-3">
+                <input name="password" type="password" class="form-control" id="password" placeholder="password" required ngModel>
+                <label for="password"><i class="bi bi-key"></i> Password</label>
+              </div>
+            </div>
+              <button type="submit" class="btn btn-success px-5" [disabled]="formClub.invalid">Registrati</button>
+            </div>
+            </form>
+          </div>
+          <hr class="border border-secondary">
+          <p class="text-secondary">Sei già registrato? <a class="text-success text-decoration-none" [routerLink]="['/login']">Effettua il Login</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+

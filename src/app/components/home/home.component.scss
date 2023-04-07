@@ -1,0 +1,90 @@
+hr {
+color: transparent;
+}
+
+.carousel-item {
+  width: 100%;
+  max-height: 600px;
+}
+
+.carousel-caption h1,
+#description p,
+#blockTitle {
+  font-style: oblique;
+}
+
+.carousel-caption h1,
+#description p {
+  font-weight: 900;
+  font-size: 2em;
+  color: #166811;
+}
+
+.carousel-caption h1 {
+  text-shadow: 2px 2px 2px white;
+  font-size: 3em;
+}
+
+#description p {
+  line-height: 1.2;
+}
+
+#carouselImg {
+  background-size: cover;
+}
+
+#block {
+  background-color: #166811;
+  color: white;
+}
+
+#blockTitle {
+  font-style: oblique;
+}
+
+#blockLink {
+  border: solid 2px white;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+#blockLink:hover {
+  background-color: white;
+  color: #166811;
+  font-weight: 600;
+}
+
+#blockImgOne,
+#blockImgTwo {
+  position: relative;
+  right: -50px;
+  top: -100px;
+}
+
+#blockImgOne{
+  max-width: 500px;
+}
+
+#blockImgTwo {
+  max-height: 600px;
+}
+
+@media screen and (max-width: 400px) {
+  #blockImgOne,
+  #blockImgTwo {
+    position: relative;
+    right: -50px;
+    top: -100px;
+  }
+
+  #blockImgOne {
+    max-width: 300px;
+  }
+
+  #blockImgTwo {
+    max-height: 400px;
+  }
+
+}

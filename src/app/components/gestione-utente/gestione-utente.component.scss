@@ -1,0 +1,57 @@
+.bg-blue {
+  background-color: #29335C;
+}
+
+.bg-green {
+  background-color: #7EA16B;
+}
+
+.img-thumbnail {
+  width: 150px;
+  height: 150px;
+}
+
+button {
+  font-weight: 500;
+  background-color: #E4572E;
+  color: #29335C;
+  outline: none;
+  &:hover{
+    background-color: #29335C;
+    border: 1px solid #E4572E;
+    color: #E4572E;
+  }
+}
+
+.modal-content {
+  background-color: #29335C;
+
+  h1 {
+    color: #E4572E;
+  }
+
+  button {
+    font-weight: 500;
+    background-color: #E4572E;
+    color: #29335C;
+    outline: none;
+    &:hover{
+      background-color: #29335C;
+      border: 1px solid #E4572E;
+      color: #E4572E;
+    }
+  }
+
+  .dismiss {
+    font-weight: 500;
+    background-color: #29335C;
+    border: 1px solid #E4572E;
+    color: #E4572E;
+
+    &:hover {
+      background-color: #E4572E;
+      color: #29335C;
+      outline: none;
+    }
+  }
+}

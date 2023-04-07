@@ -1,0 +1,22 @@
+<header>
+  <div class="container-fluid m-0 p-0">
+    <div class="d-flex flex-wrap align-items-center justify-content-between navbar">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <svg class="bi me-2" width="10" height="10" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <div class="d-flex text-center align-items-center">
+        <div *ngIf="!isLoggedIn">
+          <ul>
+            <li><a [routerLink]="['/login']">LOGIN</a></li>
+            <li><a [routerLink]="['/register']">REGISTRATI</a></li>
+          </ul>
+        </div>
+        <div *ngIf="isLoggedIn">
+          <ul>
+            <li class="pointer"><a (click)="logout()">LOGOUT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

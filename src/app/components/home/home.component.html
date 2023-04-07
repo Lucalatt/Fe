@@ -1,0 +1,88 @@
+<main>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img src="assets/images/home-4.jpg" class="img-fluid" alt="" id="carouselImg">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>SCEGLI TRA TUTTI GLI SPORT PRESENTI</h1>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/home-5.jpg" class="img-fluid" alt="" id="carouselImg">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>FATTI TROVARE PIU' FACILMENTE</h1>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <img src="assets/images/home-6.jpg" class="img-fluid" alt="" id="carouselImg">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>CERCA TRA DECINE DI CLUB</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <hr class="my-5">
+
+  <div class="container text-center mx-auto my-5" id="description">
+    <p>BENVENUTO SU CLUBFINDER, LA PIATTAFORMA CHE METTE IN CONTATTO GLI ATLETI E I CLUB IN TUTTO IL PAESE</p>
+  </div>
+
+  <hr class="my-5">
+
+  <div class="container marketing mx-auto my-5 justify-content-center">
+    <div class="container col-xxl-12 px-4 py-4 my-5" id="block">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="assets/images/home-1.jpg" alt="" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy" id="blockImgOne">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-white lh-1 mb-5" id="blockTitle">SEI UN ATLETA?</h1>
+          <p class="lead mb-5">Trova il tuo nuovo club e continua a fare quello che più ti piace!
+            Scegli tra decine di club iscritti, e contattali direttamente sulla piattaforma!</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a id="blockLink" [routerLink]="['/register']">REGISTRATI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="container col-xxl-12 px-4 py-4 my-5" id="block">
+      <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="assets/images/home-7.jpg" alt="" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" height="700" loading="lazy" id="blockImgTwo">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-white lh-1 mb-5" id="blockTitle">SEI UN CLUB?</h1>
+          <p class="lead mb-5">Registra la tua società e fatti trovare subito dai giocatori!
+            Entra subito in contatto con i tuoi nuovi atleti, ampliare la tua rosa sarà più semplice!</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a [routerLink]="['/register']" id="blockLink">REGISTRATI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>

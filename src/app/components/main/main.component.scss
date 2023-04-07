@@ -1,0 +1,30 @@
+.card {
+  border-radius: 0;
+  border: solid 2px #166811;
+  box-shadow: 3px 3px;
+}
+
+h3,
+.h4.text-center {
+  background-color: #166811;
+  box-shadow: 3px 3px black;
+}
+
+.h4.text-center {
+  color: white;
+}
+
+a {
+  border: solid 2px #166811;
+  padding: 10px;
+  text-decoration: none;
+  color: #166811;
+  font-weight: 600;
+}
+
+a:hover {
+  background-color: #166811;
+  color: white;
+  font-weight: 600;
+}
+

@@ -1,0 +1,30 @@
+<div class="container-fluid my-5">
+  <div class="row flex-md-row align-content-center">
+    <div class="col-md-3 p-2 mx-auto">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title mb-5 text-center text-white">CHAT</h3>
+          <div *ngIf="club" class="col">
+            <div class="elenco">{{club.nome}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 p-2 mx-auto">
+      <div class="messaggi">
+        <div *ngFor="let messaggio of messaggi" class="col">
+          <div class="data">{{messaggio.data}}</div>
+          <div class="primo">{{messaggio.messaggio}}</div>
+        </div>
+        <!-- <div *ngFor="let messaggio of messaggi" class="col">
+          <div class="data">{{messaggio.data}}</div>
+          <div class="secondo">{{messaggio.messaggio}}</div>
+        </div> -->
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" id="testo" rows="3"></textarea>
+        <button type="submit" class="btn btn-success mb-3" (click)="inviaMessaggio()">Invia</button>
+      </div>
+    </div>
+  </div>
+</div>

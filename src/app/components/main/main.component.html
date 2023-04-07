@@ -1,0 +1,74 @@
+<div class="container-fluid my-5">
+  <div class="row flex-md-row align-content-center">
+    <div class="col-md-3 p-2 mx-auto">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title mb-5 text-center text-white">CERCA</h3>
+          <div class="h4 text-center" >SPORT</div>
+          <div class="form-floating form-group mb-3">
+            <input name="sport" type="sport" class="form-control" id="sport" placeholder="sport"
+            [(ngModel)]="searchSport" />
+            <label for="sport">SPORT</label>
+            <button class="btn btn-success" (click)="getSport()">Cerca</button>
+            <button class="btn btn-success" (click)="reset()">Reset</button>
+          </div>
+          <div class="h4 text-center">REGIONE</div>
+          <div class="form-floating form-group mb-3">
+            <input name="regione" type="regione" class="form-control" id="regione" placeholder="regione"
+              [(ngModel)]="searchRegione" />
+            <label for="regione">REGIONE</label>
+            <button class="btn btn-success" (click)="getRegione()">Cerca</button>
+            <button class="btn btn-success" (click)="reset()">Reset</button>
+          </div>
+          <div class="h4 text-center">CITTA'</div>
+          <div class="form-floating form-group mb-3">
+            <input name="citta" type="citta" class="form-control" id="citta" placeholder="citta"
+              [(ngModel)]="searchCitta" />
+            <label for="citta">CITTA'</label>
+            <button class="btn btn-success" (click)="getCitta()">Cerca</button>
+            <button class="btn btn-success" (click)="reset()">Reset</button>
+          </div>
+          <div class="h4 text-center">COMPETIZIONE</div>
+          <div class="form-floating form-group mb-4">
+            <input name="competizione" type="competizione" class="form-control" id="competizione" placeholder="competizione"
+              [(ngModel)]="searchCompetizione" />
+            <label for="competizione">COMPETIZIONE</label>
+            <button class="btn btn-success" (click)="getCompetizione()">Cerca</button>
+            <button class="btn btn-success" (click)="reset()">Reset</button>
+          </div>
+          <div class="form-floating form-group mb-4 text-center">
+            <a href="">ARCHIVIO CHAT</a>
+          </div>
+          <div class="form-floating form-group mb-1 text-center">
+            <a href="">PROFILO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 p-2 mx-auto">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
+        <div *ngFor="let utente of utenti" class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </svg>
+            <div class="card-body">
+              <h4>{{ utente.nome }}</h4>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="">Dettagli</a>
+                  <a [routerLink]="['/chat', utente.id]">Contatta</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

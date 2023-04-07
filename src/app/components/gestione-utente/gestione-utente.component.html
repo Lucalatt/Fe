@@ -1,0 +1,22 @@
+
+
+<div class="container my-5">
+  <div class="row" *ngIf="authService.userData as user">
+    <div class="col card text-center text-light p-4 m-2 bg-blue">
+      <img class="align-self-center img-thumbnail rounded-circle bg-green border-0 mb-4" src="{{(user.photoURL) ? user.photoURL : '/assets/user.png'}}" alt="{{user.displayName}}">
+
+      <h2 class="mb-4">Nome:
+        <span *ngIf="user.displayName">{{user.displayName}}</span>
+        <span *ngIf="!user.displayName">{{(user.nome) ? (user.nome) : "User"}}</span>
+      </h2>
+      <p>User ID: <strong>{{user.uid}}</strong></p>
+      <p>Email: <strong>{{user.email}}</strong></p>
+      <p>Email Verified: <strong>{{user.emailVerified}}</strong></p>
+      <div>
+        <button class="btn" data-bs-toggle="modal" data-bs-target="#modificaUtente">Modifica Dati</button>
+      </div>
+
+
+    </div>
+  </div>
+</div>
